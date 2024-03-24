@@ -1,33 +1,64 @@
+*,
+*::before,
+*::after{
+  box-sizing: border-box;
+}
+
 * {
+  margin: 0;
+  padding: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: #ffdddd;
+}
+
+body{
+  padding-bottom: 56px;
 }
 
 .title {
   font-weight: bold;
   background-color: #ff7777;
   color: white;
-  padding-left: 20px;
-  margin-left: -10px;
-  margin-right: -8px;
+  margin-bottom: 16px;
+}
+
+.content {
+  margin-left: 50px;
+  margin-bottom: 16px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: linear-gradient(180deg, #ff777744, #f9dd9499, #8cfccfee);  
+  height : 40px;
+  color: white;
+  font-size: 24;
+  text-align: center;
+  padding: 10px;
+  font-style: italic;
+  font-family: cursive, sans-serif;
+  text-shadow: 1px 1px 2px indianred;
 }
 
 h1 {
+  text-align: center;
+  padding: 16px;
   font-size: 32px;
-  padding-top: 20px;
-  margin-top: -20px;
-  padding-bottom: 10px;
+  margin-top: 0px;
 }
 
 h2 {
   font-size: 26px;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding: 8px 50px;
+  margin-top: 16px;
 }
 
 ul {
   display: block;
-  margin-left: -10px;
+  padding: 0 20px;
 }
 
 ul li {
@@ -53,7 +84,7 @@ ul li:before {
 
 ol {
   display: block;
-  margin-left: -10px;
+  padding: 0 20px;
 }
 
 ol li {
